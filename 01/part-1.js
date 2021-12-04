@@ -1,7 +1,6 @@
-const fileSync = require('fs');
-const path = require('path');
-const input = fileSync.readFileSync(path.join(__dirname, 'input.txt'), 'utf-8');
-const depthReport = input.split('\n').map(entry => parseInt(entry, 10));
+const inputReader = require('../utils/inputReader.js');
+const path  = require('path');
+const depthReport = inputReader.readNumerical(path.join(__dirname, 'input.txt'));
 
 // Process the depth report measurements
 let previousMeasurement;
