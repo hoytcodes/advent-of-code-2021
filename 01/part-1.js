@@ -6,7 +6,7 @@ let previousMeasurement;
 let depthIncrease = 0;
 
 depthReport.forEach(measurement => {
-  if(typeof previousMeasurement !== undefined &&
+  if(typeof previousMeasurement !== 'undefined' &&
     previousMeasurement < measurement) {
     depthIncrease += 1;
   }
