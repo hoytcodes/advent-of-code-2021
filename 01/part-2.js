@@ -2,7 +2,6 @@ const inputReader = require('../utils/inputReader.js');
 const path  = require('path');
 const depthReport = inputReader.readNumerical(path.join(__dirname, 'input.txt'));
 
-// Process the depth report measurements
 let processedReport = [];
 for(i = 0; i <= depthReport.length; i++) {
   let measurementWindow = depthReport[i] + depthReport[i+1] + depthReport[i+2];
@@ -21,5 +20,4 @@ processedReport.forEach(measurement => {
   previousMeasurement = measurement;
 });
 
-// Write to the console
 console.log(depthIncrease);
