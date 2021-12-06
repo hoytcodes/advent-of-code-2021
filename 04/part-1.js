@@ -47,19 +47,15 @@ while(typeof winningNumber === 'undefined') {
 
 function isWinningBoard(board) {
   for(let row of board) {
-    if(row.every(number => number.marked)) {
-      return true;
-    }
+    if(row.every(number => number.marked)) return true;
   }
 
   let noOfColumns = board[0].length;
   const flatBoard = board.flat();
 
   for(let i = 0; i < noOfColumns; i++) {
-    let column = flatBoard.map(number => number.column === i);
-    if(column.every(number => number.marked)) {
-      return true;
-    }
+    let column = flatBoard.filter(number => number.column === i);
+    if(column.every(number => number.marked)) return true;
   }
 
   return false;
