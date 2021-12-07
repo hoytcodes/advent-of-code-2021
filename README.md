@@ -2,7 +2,7 @@
 Solutions to the [Advent of Code](https://adventofcode.com/) challenge for December 2021. This years solutions are written in JavaScript and run in the console via Node.js. It probably won't be the most elegant code, but data processing isn't my strong point.
 
 ## 🏆 Goals
-* Complete at least 5 days, both parts
+* Complete at least 5 days, both parts ✔
 * Learn more about array methods
 
 ## 🚀 Progress
@@ -12,4 +12,6 @@ Solutions to the [Advent of Code](https://adventofcode.com/) challenge for Decem
 |02|[Dive!](https://adventofcode.com/2021/day/2)|⭐|⭐|
 |03|[Binary Diagnostic](https://adventofcode.com/2021/day/3)|⭐|⭐|
 |04|[Giant Squid](https://adventofcode.com/2021/day/4)|⭐|⭐|
-|05|[Hydrothermal Venture](https://adventofcode.com/2021/day/5)|||
+|05|[Hydrothermal Venture](https://adventofcode.com/2021/day/5)|⭐|⭐|
+|06|[Lanternfish](https://adventofcode.com/2021/day/6)|||
+|07|[The Treachery of Whales](https://adventofcode.com/2021/day/7)|||
