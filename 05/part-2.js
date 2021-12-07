@@ -44,7 +44,7 @@ function populateMap(map, report) {
       let yPoint = y1;
 
       while(xPoint !== x2 + xDirection || yPoint !== y2 + yDirection) {
-        map[yPoint][xPoint] += 1;
+        populatedMap[yPoint][xPoint] += 1;
 
         xPoint += xDirection;
         yPoint += yDirection;
@@ -57,7 +57,7 @@ function populateMap(map, report) {
 
     for(let y = yStartPoint; y <= yEndPoint; y++) {
       for(let x = xStartPoint; x <= xEndPoint; x++) {
-        map[y][x] += 1;
+        populatedMap[y][x] += 1;
       }
     }
   }
