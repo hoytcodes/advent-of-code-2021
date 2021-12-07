@@ -25,10 +25,10 @@ function generateMap(report) {
   const mapHeight = Math.max(...y2Coordinates);
 
   const map = [];
-  for(let i = 0; i <= mapHeight; i++) {
-    map[i] = [];
-    for(let j = 0; j <= mapWidth; j++) {
-      map[i][j] = 0;
+  for(let y = 0; y <= mapHeight; y++) {
+    map[y] = [];
+    for(let x = 0; x <= mapWidth; x++) {
+      map[y][x] = 0;
     }
   }
 
@@ -49,8 +49,8 @@ function populateMap(map, report) {
       startPoint = Math.min(y1, y2);
       endPoint = Math.max(y1, y2);
 
-      for(let i = startPoint; i <= endPoint; i++) {
-        populatedMap[i][x1] += 1;
+      for(let y = startPoint; y <= endPoint; y++) {
+        populatedMap[y][x1] += 1;
       }
     }
 
@@ -58,8 +58,8 @@ function populateMap(map, report) {
       startPoint = Math.min(x1, x2);
       endPoint = Math.max(x1, x2);
 
-      for(let i = startPoint; i <= endPoint; i++) {
-        populatedMap[y1][i] += 1;
+      for(let x = startPoint; x <= endPoint; x++) {
+        populatedMap[y1][x] += 1;
       }
     }
   }
