@@ -1,7 +1,7 @@
 const fileSync = require('fs');
 
  exports.read = function(path) {
-  const input = fileSync.readFileSync(path, 'utf-8');
+  const input = fileSync.readFileSync(path, 'utf-8').trim();
   return input.split('\n');
 }
 
